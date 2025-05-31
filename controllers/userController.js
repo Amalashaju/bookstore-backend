@@ -56,7 +56,7 @@ exports.loginController = async (req, res) => {
 
         }
         else {
-            res.status(200).json('incorrect email')
+            res.status(404).json('incorrect email')
         }
 
     } catch (error) {
